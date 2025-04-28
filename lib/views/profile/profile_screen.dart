@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:messanger_clone/views/nav/bottom_screeb.dart';
 import 'package:messanger_clone/views/widgets/ui_helper.dart';
 import '/extensions/app_exten.dart';
 import '/views/constants/app_colors.dart';
@@ -40,6 +41,7 @@ class ProfileScreen extends StatelessWidget {
             30.0.ht,
             UiHelper.customTextField(
               controller: firstNameController,
+              iconData: Icons.person,
               text: 'First Name(Required)',
               keyboardType: TextInputType.name,
               context: context,
@@ -47,6 +49,7 @@ class ProfileScreen extends StatelessWidget {
             10.0.ht,
             UiHelper.customTextField(
               controller: firstNameController,
+              iconData: CupertinoIcons.person_2,
               text: 'Last Name(Required)',
               keyboardType: TextInputType.name,
               context: context,
@@ -54,7 +57,10 @@ class ProfileScreen extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: UiHelper.customButton(buttonTitle: 'Save', onPressed: (){}),
+      floatingActionButton: UiHelper.customButton(
+        buttonTitle: 'Save',
+        onPressed: () => context.pushReplaceSrc(BottomScreen()),
+      ),
     );
   }
 }

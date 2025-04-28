@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:messanger_clone/views/constants/app_colors.dart';
 
 class UiHelper {
-  static customImage({required String image}) {
-    return Image.asset('assets/images/$image');
+  static customImage({required String image, Color? color}) {
+    return Image.asset('assets/images/$image', color: color);
   }
 
   static customText({
@@ -62,6 +62,7 @@ class UiHelper {
     required TextEditingController controller,
     required String text,
     required TextInputType keyboardType,
+    required IconData iconData,
     required BuildContext context,
   }) {
     return Container(
@@ -79,6 +80,7 @@ class UiHelper {
         controller: controller,
         keyboardType: keyboardType,
         decoration: InputDecoration(
+          prefixIcon: Icon(iconData, color: AppColors.iconlight),
           hintText: text,
           border: InputBorder.none,
           hintStyle: (TextStyle(

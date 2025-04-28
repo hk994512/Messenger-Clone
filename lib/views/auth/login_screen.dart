@@ -45,6 +45,7 @@ class LoginScreen extends StatelessWidget {
             ),
             20.0.ht,
             UiHelper.customTextField(
+              iconData: Icons.phone,
               controller: phoneController,
               text: 'Phone Number',
               keyboardType: TextInputType.number,
