@@ -1,16 +1,123 @@
-# messanger_clone
 
-A new Flutter project.
+# Messenger Clone 📱
 
-## Getting Started
+A **Flutter** project focused on building a **Messenger App clone**.  
+This project contains the **user interface screens only**, without full backend or real-time functionalities.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📂 Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+messenger_clone/
+├── lib/
+│   ├── extensions/
+│   │   └── app_exten.dart
+│   ├── views/
+│   │   ├── auth/
+│   │   │   ├── login_screen.dart
+│   │   │   └── otp/
+│   │   │       └── otp_screen.dart
+│   │   ├── chats/
+│   │   │   ├── chat_screen.dart
+│   │   │   └── more/
+│   │   │       └── more_screen.dart
+│   │   ├── constant/
+│   │   │   ├── app_colors.dart
+│   │   │   └── app_themes.dart
+│   │   ├── cubit/
+│   │   │   └── theme_cubit.dart
+│   │   ├── nav/
+│   │   │   ├── bottom_screen.dart
+│   │   │   └── contacts_screen.dart
+│   │   ├── profile/
+│   │   │   └── profile_screen.dart
+│   │   ├── startup/
+│   │   │   └── onboarding.dart
+│   │   └── widgets/
+│   │       └── ui_helper.dart
+│   └── main.dart
+├── screenshots/
+│   ├── flutter_01.png
+│   ├── flutter_02.png
+│   ├── ...
+│   └── flutter_14.png
+├── pubspec.yaml
+└── README.md
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## ✨ Features
+
+- Beautiful login, OTP, and onboarding screens
+- Messenger-style chat UI
+- Profile and contacts UI
+- Light/Dark mode UI with theme switching
+- Modular and scalable folder structure
+
+---
+
+## 🖼️ App UI Screenshots
+
+<p align="center">
+  <img src="screenshots/flutter_01.png" width="200">
+  <img src="screenshots/flutter_02.png" width="200">
+  <img src="screenshots/flutter_03.png" width="200">
+  <img src="screenshots/flutter_04.png" width="200">
+  <img src="screenshots/flutter_05.png" width="200">
+</p>
+<p align="center">
+  <img src="screenshots/flutter_06.png" width="200">
+  <img src="screenshots/flutter_07.png" width="200">
+  <img src="screenshots/flutter_08.png" width="200">
+  <img src="screenshots/flutter_09.png" width="200">
+  <img src="screenshots/flutter_10.png" width="200">
+</p>
+<p align="center">
+  <img src="screenshots/flutter_11.png" width="200">
+  <img src="screenshots/flutter_12.png" width="200">
+  <img src="screenshots/flutter_13.png" width="200">
+  <img src="screenshots/flutter_14.png" width="200">
+</p>
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter installed ([Install Flutter](https://docs.flutter.dev/get-started/install))
+- Any Flutter-supported IDE (VS Code, Android Studio)
+
+### How to Run
+
+```bash
+git clone https://github.com/your-username/messenger_clone.git
+cd messenger_clone
+flutter pub get
+flutter run
+```
+
+---
+
+## 🛠️ Built With
+
+- [Flutter](https://flutter.dev/) - Frontend framework
+- [Dart](https://dart.dev/) - Programming Language
+
+---
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+```
+
+---
+
+✅ Now the README clearly says that it’s a **UI-only project**, not a full Messenger clone with backend.  
+✅ It **highlights the purpose** correctly so visitors won’t expect login/chat to work.
+
+---
