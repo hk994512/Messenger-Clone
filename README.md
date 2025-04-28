@@ -112,12 +112,3 @@ flutter run
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
-```
-
----
-
-✅ Now the README clearly says that it’s a **UI-only project**, not a full Messenger clone with backend.  
-✅ It **highlights the purpose** correctly so visitors won’t expect login/chat to work.
-
----
